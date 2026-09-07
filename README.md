@@ -149,17 +149,7 @@ Training writes:
 `best.pt` prioritizes one-step conditional digit accuracy, using validation
 loss as the tie breaker. Both online and EMA weights are saved.
 
-## Generate in one pass
-
-```bash
-python infer.py \
-  --checkpoint runs/mnist_shortcut16/best.pt \
-  generate \
-  --token 1 \
-  --count 8 \
-  --seed 42 \
-  --output generated_ones.png
-```
+## Generate a digit
 
 ```bash
 uv run infer.py --checkpoint runs/mnist_shortcut16/last.pt generate --token 7 --output generated_digit_7.jpg --seed 42
