@@ -133,10 +133,15 @@ Defaults:
 - CUDA BF16 when supported; otherwise CUDA FP16 with gradient scaling.
 - 25% bootstrap examples and EMA decay 0.999.
 
-A small smoke run is useful before committing to the full job:
 
 ```bash
-uv run train.py --base-steps 16 --ema-decay 0.995 --classification-weight 0.25 --generation-weight 1.0 --epochs 50 --output-dir runs/mnist_shortcut16
+uv run train.py /
+--base-steps 16 /
+--ema-decay 0.995 /
+--classification-weight 0.25 /
+--generation-weight 1.0 /
+--epochs 50 /
+--output-dir runs/mnist_shortcut16
 ```
 
 Training writes:
