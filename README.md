@@ -3,7 +3,7 @@
 A compact multimodal Transformer trained from scratch to perform both:
 
 - `image -> <digit:N>` recognition
-- `<digit:N> + random noise -> image` generation
+- `<digit:N> -> image` generation
 
 The reverse path uses a conditional **Shortcut Model**, not a deterministic
 pixel decoder. It is trained to support one-step generation while retaining
